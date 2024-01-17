@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "1. Compilation",
+      "setup": "chmod +x p3-tests.sh && ./p3-tests.sh > .gradefile",
+      "run": "grep \"One\" .gradefile",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "2. Empty Output",
+      "setup": "",
+      "run": "grep \"Two\" .gradefile",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": null
+    },
+    {
+      "name": "3. File diff",
+      "setup": "",
+      "run": "grep \"Three\" .gradefile",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": null
+    },
+    {
+      "name": "4. Grep diff",
+      "setup": "",
+      "run": "grep \"Four\" .gradefile",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": null
+    },
+    {
+      "name": "5. Cleaning up",
+      "setup": "",
+      "run": "grep \"Five\" .gradefile",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": null
+    }
+  ]
+}

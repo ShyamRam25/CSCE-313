@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "1 Compilation Test",
+      "setup": "make test > ./.gradeFile",
+      "run": "grep \"One\" .gradeFile",
+      "input": "",
+      "output": "Test One Passed",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "2 Messages From Child Process",
+      "setup": "",
+      "run": "grep \"Two\" .gradeFile",
+      "input": "",
+      "output": "Test Two Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "3 Correct Output Test",
+      "setup": "",
+      "run": "grep \"Three\" .gradeFile",
+      "input": "",
+      "output": "Test Three Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "4 Correct Output Test Two",
+      "setup": "",
+      "run": "grep \"Four\" .gradeFile",
+      "input": "",
+      "output": "Test Four Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}

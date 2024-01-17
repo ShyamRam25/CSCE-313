@@ -1,0 +1,15 @@
+<<<<<<<<<<<<<<<<<<<<<<
+all: clean $(BINS)
+======================
+CXXFLAGS=-std=c++17 -g -pedantic -Wall -Wextra -Werror -fsanitize=address,undefined -fno-omit-frame-pointer
+>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<
+.PHONY: clean test
+======================
+all: clean $(BINS)
+>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<
+clean:
+======================
+test: all
+>>>>>>>>>>>>>>>>>>>>>>
